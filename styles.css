@@ -1,0 +1,141 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: hsl(0, 36%, 70%);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navbar{
+  padding:0;
+}
+
+.navbar-brand{
+  margin-left: 50px;
+  padding-top: 40px;
+  top:0;
+  background-color: rgba(255, 255, 255, 0.0);
+  position: absolute;
+}
+
+.coming-soon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 600px;
+  padding: 0 80px;
+}
+
+.content{
+  max-width: 450px;
+}
+
+.form{
+  position: relative;
+}
+
+.input{
+  margin-top: 40px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid lightgrey;
+  border-radius: 300px;
+  padding: 16px;
+}
+
+.error{
+  display: none;
+  position: absolute;
+  right: 130px;
+  bottom: 15px;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+input:focus{
+  outline: none !important;
+  border:1px solid hsl(0, 74%, 74%);
+  box-shadow: 0 4px 10px linear-gradient(
+      135deg,
+      hsl(0, 80%, 86%),
+      hsl(0, 74%, 74%)
+    );
+}
+
+.gradient {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 500px;
+  border: none;
+  background-image:
+    linear-gradient(
+      135deg,
+      hsl(0, 80%, 86%),
+      hsl(0, 74%, 74%)
+    );
+}
+
+.gradient:hover {
+  background-color: hsl(0, 80%, 86%);
+  background-image: none;
+}
+
+.title{
+  font-size: 64px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 64px;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+}
+
+.title-bold{
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+}
+
+.image-mobile {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.image-desktop {
+  background-image: url("images/hero-desktop.jpg");
+}
+
+.result{
+  margin-left: 18px;
+}
+
+@media (max-width: 767px) {
+
+  .navbar {
+    width: 100%;
+    height: 85px;
+    background-color: rgba(255, 255, 255, 1.0);
+  }
+
+  .navbar-brand {
+      margin-left: 40px;
+      padding-top: 26px;
+      background-color: rgba(255, 255, 255, 0.0);/
+  }
+
+  .image-mobile{
+    display: block;
+  }
+  .image-desktop{
+    background-image: none;
+  }
+}
